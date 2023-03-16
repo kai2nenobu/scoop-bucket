@@ -14,5 +14,20 @@
             "hash": "790683fc183689467f06ea40a53bc9ea46f6326669e462f4b6510b7f6f49996e",
             "bin": "rain-v1.3.2_windows-amd64/rain.exe"
         }
+    },
+    "checkver": {
+        "github": "https://github.com/aws-cloudformation/rain"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/aws-cloudformation/rain/releases/download/v$version/rain-v$version_windows-amd64.zip",
+                "bin": "rain-v$version_windows-amd64/rain.exe"
+            },
+            "32bit": {
+                "url": "https://github.com/aws-cloudformation/rain/releases/download/v$version/rain-v$version_windows-i386.zip",
+                "bin": "rain-v$version_windows-i386/rain.exe"
+            }
+        }
     }
 }
